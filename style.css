@@ -1,0 +1,161 @@
+
+body {
+    box-sizing: border-box;
+    min-height: 100%;
+    margin: 0;
+    background-color: var(--root-background);
+}
+
+:root {
+    --beyaz: hsl(0, 0%, 100%);
+    --stone-100: hsl(30, 54%, 90%);
+    --stone-150: hsl(30, 18%, 87%);
+    --stone-600: hsl(30, 10%, 34%);
+    --stone-900: hsl(24, 5%, 18%);
+    --brown-800: hsl(14, 45%, 36%);
+    --rose-800: hsl(332, 51%, 32%);
+    --rose-50: hsl(330, 100%, 98%);
+    --root-background: #f3e5d8;
+}
+
+.rose {
+    color: var(--rose-800);
+}
+
+
+
+y1 {
+    font-family: youngserif;
+    font-weight: 400;
+}
+
+h2 {
+    font-family: outfit;
+    font-weight: 600;
+    font-size: 1.4rem;
+    color: var(--rose-800);
+}
+
+p {
+    font-family: outfit;
+    font-weight: 400;
+}
+
+hr {
+    color: var(--stone-100);
+    width: 100%;
+}
+
+#root {
+    max-width: 900px;
+    margin: 0 auto;
+    background-color: var(--beyaz);
+    padding: 1.3rem;
+}
+
+#root-flex {
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    flex-direction: column;
+}
+
+.food-hero {
+    width: 100%;
+    border-radius: 25px;
+    display: block;
+    margin-top: 20px;
+}
+
+.food-hero-title {
+    margin-top: 30px;
+    margin-right: auto;
+}
+
+.food-hero-title-explanation {
+    margin-top: 0;
+}
+
+.prep-container {
+    background-color: var(--rose-50);
+    border-radius: 25px;
+    width: 100%;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.prep-title {
+    padding-left: 20px;
+}
+
+.prep-steps
+{
+    font-family: outfit;
+    padding-left: 35px;
+    margin-top: 10px;
+}
+
+.bold-span {
+    font-weight: 600;
+}
+
+.ingredients-title {
+    font-family: youngserif;
+    color: var(--brown-800);
+    margin-right: auto;
+    font-weight: 500;
+    font-size: 1.7rem;
+}
+
+.ingredients-list {
+    margin-right: auto;
+}
+
+.li-space {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+ol li::marker {
+    color: var(--rose-800)
+}
+
+.left-pad {
+    margin-right: auto;
+}
+
+.table-column {
+    display: flex;
+    flex-flow: row;
+    justify-content: flex-start;
+    width: 100%;
+}
+
+
+.table-right {
+    color: var(--rose-800);
+    font-weight: 700;
+}
+
+.table-left { 
+    margin-left: 10%;
+    width: 70%;
+}
+
+@font-face {
+    font-family: outfit;
+    src: url(../assets/fonts/outfit/Outfit-VariableFont_wght.ttf);
+}
+
+@font-face {
+    font-family: youngserif;
+    src: url(../assets/fonts/young-serif/YoungSerif-Regular.ttf);
+}
+
+@media screen and (max-width: 400px) {
+    * {
+        margin: 0.2rem;
+    }
+}
